@@ -67,11 +67,11 @@ class notification_deleted extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return "The user with id '$this->userid' deleted the notification with id '$this->objectid'
-          for the block with id '$this->contextinstanceid'.
-          The title was '" . $this->other['old_title'] . "'.
-          The message was '" . $this->other['old_message'] .  "'.
-          The date from was '" . userdate($this->other['old_date_from']) . "'.
-          The date to was '" . userdate($this->other['old_date_to']) . "'.";
+        return 'The user with id \'' . $this->userid . '\' deleted the notification with id \'' . $this->objectid . '\'
+          for the block with id \'' . $this->contextinstanceid . '\'.
+          The title was \'' . $this->other['old_title'] . '\'.
+          The message was \'' . $this->other['old_message'] .  '\'.
+          The date from was \'' . userdate($this->other['old_date_from']) . '\'.
+          The date to was \'' . userdate($this->other['old_date_to']) . '\'.';
     }
 }

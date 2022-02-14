@@ -145,13 +145,17 @@ function prep_notifications($instanceid) {
 function get_date_formats() {
     $formats = [];
 
+    // Show formats for 30 January 2023.
+    $timestamp = '1675036800';
+
     // Add supported formats to array.
-    $formats['d/m/Y'] = date('d/m/Y');
-    $formats['j/n/y'] = date('j/n/y');
-    $formats['m-d-Y'] = date('m-d-Y');
-    $formats['n-j-y'] = date('n-j-y');
-    $formats['j M y'] = date('j M y');
-    $formats['j F Y'] = date('j F Y');
+    $formats['d/m/Y'] = date('d/m/Y', $timestamp);
+    $formats['j/n/y'] = date('j/n/y', $timestamp);
+    $formats['m-d-Y'] = date('m-d-Y', $timestamp);
+    $formats['n-j-y'] = date('n-j-y', $timestamp);
+    $formats['Y-m-d'] = date('Y-m-d', $timestamp);
+    $formats['j M y'] = date('j M y', $timestamp);
+    $formats['j F Y'] = date('j F Y', $timestamp);
 
     return $formats;
 }

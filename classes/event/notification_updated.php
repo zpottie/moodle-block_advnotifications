@@ -67,11 +67,11 @@ class notification_updated extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return "The user with id '$this->userid' updated the notification with id '$this->objectid'
-          for the block with id '$this->contextinstanceid'.
-          The title was changed from '" . $this->other['old_title'] . "' to '" . $this->other['new_title'] . "'.
-          The message was changed from '" . $this->other['old_message'] . "' to '" . $this->other['new_message'] . "'.
-          The date from was changed from '" . userdate($this->other['old_date_from']) . "' to '" . userdate($this->other['new_date_from']) . "'.
-          The date to was changed from '" . userdate($this->other['old_date_to']) . "' to '" . userdate($this->other['new_date_to']) . "'.";
+        return 'The user with id \'' . $this->userid . '\' updated the notification with id \'' . $this->objectid . '\'
+          for the block with id \'' . $this->contextinstanceid . '\'.
+          The title was changed from \'' . $this->other['old_title'] . '\' to \'' . $this->other['new_title'] . '\'.
+          The message was changed from \'' . $this->other['old_message'] . '\' to \'' . $this->other['new_message'] . '\'.
+          The date from was changed from \'' . userdate($this->other['old_date_from']) . '\' to \'' . userdate($this->other['new_date_from']) . '\'.
+          The date to was changed from \'' . userdate($this->other['old_date_to']) . '\' to \'' . userdate($this->other['new_date_to']) . '\'.';
     }
 }

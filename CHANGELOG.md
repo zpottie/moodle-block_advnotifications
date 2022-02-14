@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.4.3 - 14/02/2022
+
+### Added
+* ISO 8601 Date format - YYYY-MM-DD.
+* Event logging - Thanks [@danielneis](https://github.com/danielneis)!
+
+### Changed
+* Minor string changes (backend).
+* Tested on Moodle v3.11.
+* Bumped version number.
+
 ## v1.4.2 - 10/02/2021
 
 ### Changed

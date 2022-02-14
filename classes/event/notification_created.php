@@ -67,7 +67,7 @@ class notification_created extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return "The user with id '$this->userid' created the notification with id '$this->objectid'
-          for the block with id '$this->contextinstanceid'.";
+        return 'The user with id \'' . $this->userid . '\' created the notification with id \'' . $this->objectid . '\'
+          for the block with id \'' . $this->contextinstanceid . '\'.';
     }
 }

@@ -28,7 +28,7 @@ This could be useful in cases such as alerting users of scheduled outages, welco
 * Option to automatically remove user (dismissed/seen) records that relates to notifications that don't exist anymore
 * AJAX used to improve user-experience and simplify processes
 * Live-preview when adding/editing a notification
-* Easy to use, but fully documented with all the nitty-gritty information
+* Easy to use, but well documented
 * Implements Privacy API (GDPR Compliance)
 
 For full documentation, please check [here](docs/AdvancedNotifications.pdf) - or check the plugin's `/docs` directory.
